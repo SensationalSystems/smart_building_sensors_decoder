@@ -4,7 +4,7 @@ function Decoder(bytes, port) {
         "bytes": bytes
     };
     
-    if (port = 136) {
+    if (port == 136) {
       if ((bytes[0] & 0x8) === 0) {
         params.gnss_fix = true;
       } else {
