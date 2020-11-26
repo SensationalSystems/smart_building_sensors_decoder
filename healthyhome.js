@@ -27,7 +27,7 @@ function Decoder(bytes, port) {
     }
 
     // IAQ Measurement
-    iaq = (bytes[9] << 9) | bytes[8];
+    iaq = (bytes[9] << 8) | bytes[8];
 
     // Humidity Measurement
     rh = bytes[3] &= 0x7f;
